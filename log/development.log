@@ -2744,3 +2744,158 @@ DEPRECATION WARNING: You are calling a `*_path` helper with the `only_path` opti
 DEPRECATION WARNING: You are calling a `*_path` helper with the `only_path` option explicitly set to `false`. This option will stop working on path helpers in Rails 5. Use the corresponding `*_url` helper instead. (called from _app_views_posts_show_html_erb__3117686912010141093_70183265004420 at /Volumes/Yatheesha/personal-blog/app/views/posts/show.html.erb:21)
   Rendered posts/show.html.erb within layouts/application (532.2ms)
 Completed 200 OK in 659ms (Views: 646.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/posts/1" for ::1 at 2016-05-01 16:16:25 +0530
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mPost Load (0.4ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1  [["id", 1]]
+DEPRECATION WARNING: You are calling a `*_path` helper with the `only_path` option explicitly set to `false`. This option will stop working on path helpers in Rails 5. Use the corresponding `*_url` helper instead. (called from _app_views_posts_show_html_erb__3117686912010141093_70183295688480 at /Volumes/Yatheesha/personal-blog/app/views/posts/show.html.erb:17)
+DEPRECATION WARNING: You are calling a `*_path` helper with the `only_path` option explicitly set to `false`. This option will stop working on path helpers in Rails 5. Use the corresponding `*_url` helper instead. (called from _app_views_posts_show_html_erb__3117686912010141093_70183295688480 at /Volumes/Yatheesha/personal-blog/app/views/posts/show.html.erb:19)
+DEPRECATION WARNING: You are calling a `*_path` helper with the `only_path` option explicitly set to `false`. This option will stop working on path helpers in Rails 5. Use the corresponding `*_url` helper instead. (called from _app_views_posts_show_html_erb__3117686912010141093_70183295688480 at /Volumes/Yatheesha/personal-blog/app/views/posts/show.html.erb:21)
+  Rendered posts/_disqus.html.erb (0.3ms)
+  Rendered posts/show.html.erb within layouts/application (17.3ms)
+Completed 200 OK in 143ms (Views: 141.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-05-01 16:16:26 +0530
+
+
+Started GET "/assets/application.self-503568575fea43de097a9ecf5e4a270d326e503937ae959e5afbd35f39ba018f.css?body=1" for ::1 at 2016-05-01 16:16:26 +0530
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-05-01 16:16:26 +0530
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-05-01 16:16:26 +0530
+
+
+Started GET "/assets/posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-05-01 16:16:26 +0530
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-05-01 16:16:26 +0530
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-05-01 16:16:26 +0530
+
+
+Started GET "/posts/1" for ::1 at 2016-05-01 16:22:44 +0530
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1[0m  [["id", 1]]
+DEPRECATION WARNING: You are calling a `*_path` helper with the `only_path` option explicitly set to `false`. This option will stop working on path helpers in Rails 5. Use the corresponding `*_url` helper instead. (called from _app_views_posts_show_html_erb__3117686912010141093_70183295688480 at /Volumes/Yatheesha/personal-blog/app/views/posts/show.html.erb:17)
+DEPRECATION WARNING: You are calling a `*_path` helper with the `only_path` option explicitly set to `false`. This option will stop working on path helpers in Rails 5. Use the corresponding `*_url` helper instead. (called from _app_views_posts_show_html_erb__3117686912010141093_70183295688480 at /Volumes/Yatheesha/personal-blog/app/views/posts/show.html.erb:19)
+DEPRECATION WARNING: You are calling a `*_path` helper with the `only_path` option explicitly set to `false`. This option will stop working on path helpers in Rails 5. Use the corresponding `*_url` helper instead. (called from _app_views_posts_show_html_erb__3117686912010141093_70183295688480 at /Volumes/Yatheesha/personal-blog/app/views/posts/show.html.erb:21)
+DEPRECATION WARNING: You are calling a `*_path` helper with the `only_path` option explicitly set to `false`. This option will stop working on path helpers in Rails 5. Use the corresponding `*_url` helper instead. (called from _app_views_posts__disqus_html_erb___3407432561593209253_70183315918840 at /Volumes/Yatheesha/personal-blog/app/views/posts/_disqus.html.erb:9)
+  Rendered posts/_disqus.html.erb (1.6ms)
+  Rendered posts/show.html.erb within layouts/application (13.0ms)
+Completed 200 OK in 27ms (Views: 26.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.self-503568575fea43de097a9ecf5e4a270d326e503937ae959e5afbd35f39ba018f.css?body=1" for ::1 at 2016-05-01 16:22:44 +0530
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-05-01 16:22:44 +0530
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-05-01 16:22:44 +0530
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-05-01 16:22:44 +0530
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-05-01 16:22:44 +0530
+
+
+Started GET "/assets/posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-05-01 16:22:44 +0530
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-05-01 16:22:44 +0530
+
+
+Started GET "/posts/" for ::1 at 2016-05-01 16:23:46 +0530
+Processing by PostsController#index as HTML
+  Rendered posts/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 110ms (Views: 108.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/1" for ::1 at 2016-05-01 16:23:49 +0530
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mPost Load (0.3ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1  [["id", 1]]
+DEPRECATION WARNING: You are calling a `*_path` helper with the `only_path` option explicitly set to `false`. This option will stop working on path helpers in Rails 5. Use the corresponding `*_url` helper instead. (called from _app_views_posts_show_html_erb__3117686912010141093_70183295688480 at /Volumes/Yatheesha/personal-blog/app/views/posts/show.html.erb:17)
+DEPRECATION WARNING: You are calling a `*_path` helper with the `only_path` option explicitly set to `false`. This option will stop working on path helpers in Rails 5. Use the corresponding `*_url` helper instead. (called from _app_views_posts_show_html_erb__3117686912010141093_70183295688480 at /Volumes/Yatheesha/personal-blog/app/views/posts/show.html.erb:19)
+DEPRECATION WARNING: You are calling a `*_path` helper with the `only_path` option explicitly set to `false`. This option will stop working on path helpers in Rails 5. Use the corresponding `*_url` helper instead. (called from _app_views_posts_show_html_erb__3117686912010141093_70183295688480 at /Volumes/Yatheesha/personal-blog/app/views/posts/show.html.erb:21)
+DEPRECATION WARNING: You are calling a `*_path` helper with the `only_path` option explicitly set to `false`. This option will stop working on path helpers in Rails 5. Use the corresponding `*_url` helper instead. (called from _app_views_posts__disqus_html_erb___3407432561593209253_70183315918840 at /Volumes/Yatheesha/personal-blog/app/views/posts/_disqus.html.erb:9)
+  Rendered posts/_disqus.html.erb (1.0ms)
+  Rendered posts/show.html.erb within layouts/application (22.9ms)
+Completed 200 OK in 93ms (Views: 91.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/posts/1" for ::1 at 2016-05-01 16:24:56 +0530
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1[0m  [["id", 1]]
+DEPRECATION WARNING: You are calling a `*_path` helper with the `only_path` option explicitly set to `false`. This option will stop working on path helpers in Rails 5. Use the corresponding `*_url` helper instead. (called from _app_views_posts_show_html_erb__3117686912010141093_70183295688480 at /Volumes/Yatheesha/personal-blog/app/views/posts/show.html.erb:17)
+DEPRECATION WARNING: You are calling a `*_path` helper with the `only_path` option explicitly set to `false`. This option will stop working on path helpers in Rails 5. Use the corresponding `*_url` helper instead. (called from _app_views_posts_show_html_erb__3117686912010141093_70183295688480 at /Volumes/Yatheesha/personal-blog/app/views/posts/show.html.erb:19)
+DEPRECATION WARNING: You are calling a `*_path` helper with the `only_path` option explicitly set to `false`. This option will stop working on path helpers in Rails 5. Use the corresponding `*_url` helper instead. (called from _app_views_posts_show_html_erb__3117686912010141093_70183295688480 at /Volumes/Yatheesha/personal-blog/app/views/posts/show.html.erb:21)
+DEPRECATION WARNING: You are calling a `*_path` helper with the `only_path` option explicitly set to `false`. This option will stop working on path helpers in Rails 5. Use the corresponding `*_url` helper instead. (called from _app_views_posts__disqus_html_erb___3407432561593209253_70183296278120 at /Volumes/Yatheesha/personal-blog/app/views/posts/_disqus.html.erb:9)
+DEPRECATION WARNING: You are calling a `*_path` helper with the `only_path` option explicitly set to `false`. This option will stop working on path helpers in Rails 5. Use the corresponding `*_url` helper instead. (called from _app_views_posts__disqus_html_erb___3407432561593209253_70183296278120 at /Volumes/Yatheesha/personal-blog/app/views/posts/_disqus.html.erb:19)
+  Rendered posts/_disqus.html.erb (1.6ms)
+  Rendered posts/show.html.erb within layouts/application (12.5ms)
+Completed 200 OK in 108ms (Views: 106.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.self-503568575fea43de097a9ecf5e4a270d326e503937ae959e5afbd35f39ba018f.css?body=1" for ::1 at 2016-05-01 16:24:56 +0530
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-05-01 16:24:56 +0530
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-05-01 16:24:56 +0530
+
+
+Started GET "/assets/posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-05-01 16:24:56 +0530
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-05-01 16:24:56 +0530
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-05-01 16:24:56 +0530
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-05-01 16:24:56 +0530
+
+
+Started GET "/posts/1" for ::1 at 2016-05-01 16:27:34 +0530
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mPost Load (0.8ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1  [["id", 1]]
+DEPRECATION WARNING: You are calling a `*_path` helper with the `only_path` option explicitly set to `false`. This option will stop working on path helpers in Rails 5. Use the corresponding `*_url` helper instead. (called from _app_views_posts_show_html_erb__3117686912010141093_70183295688480 at /Volumes/Yatheesha/personal-blog/app/views/posts/show.html.erb:17)
+DEPRECATION WARNING: You are calling a `*_path` helper with the `only_path` option explicitly set to `false`. This option will stop working on path helpers in Rails 5. Use the corresponding `*_url` helper instead. (called from _app_views_posts_show_html_erb__3117686912010141093_70183295688480 at /Volumes/Yatheesha/personal-blog/app/views/posts/show.html.erb:19)
+DEPRECATION WARNING: You are calling a `*_path` helper with the `only_path` option explicitly set to `false`. This option will stop working on path helpers in Rails 5. Use the corresponding `*_url` helper instead. (called from _app_views_posts_show_html_erb__3117686912010141093_70183295688480 at /Volumes/Yatheesha/personal-blog/app/views/posts/show.html.erb:21)
+DEPRECATION WARNING: You are calling a `*_path` helper with the `only_path` option explicitly set to `false`. This option will stop working on path helpers in Rails 5. Use the corresponding `*_url` helper instead. (called from _app_views_posts__disqus_html_erb___3407432561593209253_70183295296400 at /Volumes/Yatheesha/personal-blog/app/views/posts/_disqus.html.erb:5)
+  Rendered posts/_disqus.html.erb (1.3ms)
+  Rendered posts/show.html.erb within layouts/application (22.6ms)
+Completed 200 OK in 43ms (Views: 40.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-05-01 16:27:34 +0530
+
+
+Started GET "/assets/application.self-503568575fea43de097a9ecf5e4a270d326e503937ae959e5afbd35f39ba018f.css?body=1" for ::1 at 2016-05-01 16:27:34 +0530
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-05-01 16:27:34 +0530
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-05-01 16:27:34 +0530
+
+
+Started GET "/assets/posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-05-01 16:27:34 +0530
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-05-01 16:27:34 +0530
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-05-01 16:27:34 +0530
