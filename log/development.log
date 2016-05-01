@@ -3113,3 +3113,132 @@ DEPRECATION WARNING: You are calling a `*_path` helper with the `only_path` opti
   Rendered posts/_disqus.html.erb (0.6ms)
   Rendered posts/show.html.erb within layouts/application (11.3ms)
 Completed 200 OK in 26ms (Views: 23.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/posts/" for ::1 at 2016-05-01 17:19:44 +0530
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.8ms)[0m  SELECT  "posts".* FROM "posts"  ORDER BY created_at desc LIMIT 2 OFFSET 0
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (12.9ms)
+Completed 200 OK in 405ms (Views: 380.6ms | ActiveRecord: 3.5ms)
+
+
+Started GET "/assets/application.self-503568575fea43de097a9ecf5e4a270d326e503937ae959e5afbd35f39ba018f.css?body=1" for ::1 at 2016-05-01 17:19:45 +0530
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-05-01 17:19:45 +0530
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-05-01 17:19:45 +0530
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-05-01 17:19:45 +0530
+
+
+Started GET "/assets/posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-05-01 17:19:45 +0530
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-05-01 17:19:45 +0530
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-05-01 17:19:45 +0530
+
+
+Started GET "/posts/" for ::1 at 2016-05-01 17:20:42 +0530
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.4ms)[0m  SELECT  "posts".* FROM "posts"  ORDER BY created_at desc LIMIT 2 OFFSET 0
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (63.3ms)
+Completed 200 OK in 93ms (Views: 92.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-05-01 17:20:42 +0530
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-05-01 17:20:42 +0530
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-05-01 17:20:42 +0530
+
+
+Started GET "/assets/application.self-503568575fea43de097a9ecf5e4a270d326e503937ae959e5afbd35f39ba018f.css?body=1" for ::1 at 2016-05-01 17:20:42 +0530
+
+
+Started GET "/assets/posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-05-01 17:20:42 +0530
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-05-01 17:20:42 +0530
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-05-01 17:20:42 +0530
+
+
+Started GET "/posts?page=2" for ::1 at 2016-05-01 17:20:45 +0530
+Processing by PostsController#index as HTML
+  Parameters: {"page"=>"2"}
+  [1m[35mPost Load (0.4ms)[0m  SELECT  "posts".* FROM "posts"  ORDER BY created_at desc LIMIT 2 OFFSET 2
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 30ms (Views: 27.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/posts?page=3" for ::1 at 2016-05-01 17:20:47 +0530
+Processing by PostsController#index as HTML
+  Parameters: {"page"=>"3"}
+  [1m[35mPost Load (0.4ms)[0m  SELECT  "posts".* FROM "posts"  ORDER BY created_at desc LIMIT 2 OFFSET 4
+  Rendered posts/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 19ms (Views: 17.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/posts?page=2" for ::1 at 2016-05-01 17:20:50 +0530
+Processing by PostsController#index as HTML
+  Parameters: {"page"=>"2"}
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT  "posts".* FROM "posts"  ORDER BY created_at desc LIMIT 2 OFFSET 2[0m
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "posts"
+  Rendered posts/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 18ms (Views: 16.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/posts?page=1" for ::1 at 2016-05-01 17:20:52 +0530
+Processing by PostsController#index as HTML
+  Parameters: {"page"=>"1"}
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT  "posts".* FROM "posts"  ORDER BY created_at desc LIMIT 2 OFFSET 0[0m
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "posts"
+  Rendered posts/index.html.erb within layouts/application (7.8ms)
+Completed 200 OK in 20ms (Views: 18.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/posts?page=2" for ::1 at 2016-05-01 17:20:54 +0530
+Processing by PostsController#index as HTML
+  Parameters: {"page"=>"2"}
+  [1m[36mPost Load (0.5ms)[0m  [1mSELECT  "posts".* FROM "posts"  ORDER BY created_at desc LIMIT 2 OFFSET 2[0m
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "posts"
+  Rendered posts/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 16ms (Views: 14.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/posts?page=3" for ::1 at 2016-05-01 17:20:55 +0530
+Processing by PostsController#index as HTML
+  Parameters: {"page"=>"3"}
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT  "posts".* FROM "posts"  ORDER BY created_at desc LIMIT 2 OFFSET 4[0m
+  Rendered posts/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 18ms (Views: 16.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/posts?page=2" for ::1 at 2016-05-01 17:20:57 +0530
+Processing by PostsController#index as HTML
+  Parameters: {"page"=>"2"}
+  [1m[35mPost Load (0.4ms)[0m  SELECT  "posts".* FROM "posts"  ORDER BY created_at desc LIMIT 2 OFFSET 2
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 16ms (Views: 14.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/posts?page=1" for ::1 at 2016-05-01 17:21:49 +0530
+Processing by PostsController#index as HTML
+  Parameters: {"page"=>"1"}
+  [1m[35mPost Load (0.6ms)[0m  SELECT  "posts".* FROM "posts"  ORDER BY created_at desc LIMIT 2 OFFSET 0
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 118ms (Views: 116.8ms | ActiveRecord: 1.0ms)
