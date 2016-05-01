@@ -2432,3 +2432,5 @@ DEPRECATION WARNING: You are calling a `*_path` helper with the `only_path` opti
 DEPRECATION WARNING: You are calling a `*_path` helper with the `only_path` option explicitly set to `false`. This option will stop working on path helpers in Rails 5. Use the corresponding `*_url` helper instead. (called from _app_views_posts_show_html_erb___2372386047099104820_70184148868140 at /Volumes/Yatheesha/personal-blog/app/views/posts/show.html.erb:21)
   Rendered posts/show.html.erb within layouts/application (13.5ms)
 Completed 200 OK in 29ms (Views: 28.0ms | ActiveRecord: 0.1ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
