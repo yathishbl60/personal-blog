@@ -2584,3 +2584,163 @@ PG::ConnectionBad (could not connect to server: No such file or directory
   Rendered /Users/yatheesha/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
   Rendered /Users/yatheesha/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
   Rendered /Users/yatheesha/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (124.5ms)
+
+
+Started GET "/" for ::1 at 2016-05-01 15:29:18 +0530
+
+Gem::LoadError (Specified 'sqlite3' for database adapter, but the gem is not loaded. Add `gem 'sqlite3'` to your Gemfile (and ensure its version is at the minimum required by ActiveRecord).):
+  activerecord (4.2.6) lib/active_record/connection_adapters/connection_specification.rb:177:in `rescue in spec'
+  activerecord (4.2.6) lib/active_record/connection_adapters/connection_specification.rb:174:in `spec'
+  activerecord (4.2.6) lib/active_record/connection_handling.rb:50:in `establish_connection'
+  activerecord (4.2.6) lib/active_record/railtie.rb:120:in `block (2 levels) in <class:Railtie>'
+  activesupport (4.2.6) lib/active_support/lazy_load_hooks.rb:38:in `instance_eval'
+  activesupport (4.2.6) lib/active_support/lazy_load_hooks.rb:38:in `execute_hook'
+  activesupport (4.2.6) lib/active_support/lazy_load_hooks.rb:45:in `block in run_load_hooks'
+  activesupport (4.2.6) lib/active_support/lazy_load_hooks.rb:44:in `each'
+  activesupport (4.2.6) lib/active_support/lazy_load_hooks.rb:44:in `run_load_hooks'
+  activerecord (4.2.6) lib/active_record/base.rb:315:in `<module:ActiveRecord>'
+  activerecord (4.2.6) lib/active_record/base.rb:26:in `<top (required)>'
+  activesupport (4.2.6) lib/active_support/dependencies.rb:274:in `require'
+  activesupport (4.2.6) lib/active_support/dependencies.rb:274:in `block in require'
+  activesupport (4.2.6) lib/active_support/dependencies.rb:240:in `load_dependency'
+  activesupport (4.2.6) lib/active_support/dependencies.rb:274:in `require'
+  activerecord (4.2.6) lib/active_record/migration.rb:383:in `connection'
+  activerecord (4.2.6) lib/active_record/migration.rb:370:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.6) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.6) lib/rails/engine.rb:518:in `call'
+  railties (4.2.6) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/yatheesha/.rbenv/versions/2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /Users/yatheesha/.rbenv/versions/2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /Users/yatheesha/.rbenv/versions/2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /Users/yatheesha/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.2ms)
+  Rendered /Users/yatheesha/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendered /Users/yatheesha/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/yatheesha/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (84.0ms)
+  Rendered /Users/yatheesha/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/yatheesha/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/yatheesha/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/yatheesha/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/yatheesha/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (79.7ms)
+  Rendered /Users/yatheesha/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/yatheesha/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/yatheesha/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (163.5ms)
+  [1m[36m (42.3ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL) [0m
+  [1m[35m (4.8ms)[0m  CREATE UNIQUE INDEX  "unique_schema_migrations" ON "schema_migrations"  ("version")
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreatePosts (20160501042941)
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (23.3ms)[0m  [1mCREATE TABLE "posts" ("id" serial primary key, "title" character varying, "content" text, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) [0m
+  [1m[35mSQL (12.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20160501042941"]]
+  [1m[36m (6.8ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.3ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (6.8ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'posts'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+
+
+Started GET "/" for ::1 at 2016-05-01 15:55:02 +0530
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  [1m[35mPost Load (13.2ms)[0m  SELECT  "posts".* FROM "posts"  ORDER BY created_at desc LIMIT 3
+  Rendered welcome/index.html.erb within layouts/application (20.0ms)
+Completed 200 OK in 465ms (Views: 428.5ms | ActiveRecord: 14.2ms)
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-05-01 15:55:03 +0530
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-05-01 15:55:03 +0530
+
+
+Started GET "/assets/posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-05-01 15:55:03 +0530
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-05-01 15:55:03 +0530
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-05-01 15:55:03 +0530
+
+
+Started GET "/assets/application.self-503568575fea43de097a9ecf5e4a270d326e503937ae959e5afbd35f39ba018f.css?body=1" for ::1 at 2016-05-01 15:55:03 +0530
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-05-01 15:55:04 +0530
+
+
+Started GET "/posts" for ::1 at 2016-05-01 15:55:10 +0530
+Processing by PostsController#index as HTML
+  Rendered posts/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 27ms (Views: 26.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-05-01 15:55:15 +0530
+Processing by WelcomeController#index as HTML
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT  "posts".* FROM "posts"  ORDER BY created_at desc LIMIT 3[0m
+  Rendered welcome/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 39ms (Views: 38.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/posts/new" for ::1 at 2016-05-01 15:55:19 +0530
+Processing by PostsController#new as HTML
+  Rendered posts/_form.html.erb (56.1ms)
+  Rendered posts/new.html.erb within layouts/application (64.6ms)
+Completed 200 OK in 140ms (Views: 130.2ms | ActiveRecord: 2.5ms)
+
+
+Started POST "/posts" for ::1 at 2016-05-01 16:02:48 +0530
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"+jmjALmkia3gRv9+Yr7v92SN7bqrj2k1wKZt3mWRuXZmcO6JRNyg5aqJkMaHZ4oV3rIwLzJ8A9rqkhw8L6VCBw==", "post"=>{"title"=>"Getting Started with Rails", "content"=>"###This guide covers getting up and running with Ruby on Rails.\r\n\r\n#After reading this guide, you will know:\r\n\r\n- How to install Rails, create a new Rails application, and connect your application to a database.\r\n- The general layout of a Rails application.\r\n- The basic principles of MVC (Model, View, Controller) and RESTful design.\r\n- How to quickly generate the starting pieces of a Rails application.\r\n\r\n##Generating a Controller\r\nWith the model in hand, you can turn your attention to creating a matching controller. Again, we'll use the same generator we used before:\r\n```ruby\r\n$ bin/rails generate controller Comments\r\n```\r\nThis adds a form on the Article show page that creates a new comment by calling the CommentsController create action. The form_for call here uses an array, which will build a nested route, such as /articles/1/comments.\r\n\r\n##Sample ApplicationController:\r\n\r\n```ruby\r\nclass PostsController < ApplicationController\r\n\tbefore_action :find_post, only: [:show, :edit, :update, :destroy]\r\n\r\n\tdef index\r\n\t\t\r\n\tend\r\n\r\n\tdef new\r\n\t\t@post = Post.new\r\n\tend\r\n\r\n\tdef create\r\n\t\t@post = Post.new post_params\r\n\r\n\t\tif @post.save\r\n\t\t\tredirect_to @post, notice: \"Your post is saved Successfully!\"\r\n\t\telse \r\n\t\t\trender 'new', notice: \"Unable to save your post\"\r\n\t\tend\r\n\tend\r\n\r\n\tdef show\r\n\tend\r\n\r\n\tdef edit\r\n\tend\r\n\r\n\tdef update\r\n\t\tif @post.update post_params\r\n\t\t\tredirect_to @post, notice: \"Your article is successfully updated\"\r\n\t\telse \r\n\t\t\trender 'edit'\r\n\t\tend\r\n\tend\r\n\r\n\tdef destroy\r\n\t\t@post.destroy\r\n\t\tredirect_to posts_path\r\n\tend\r\n\r\n\tprivate\r\n\r\n\tdef post_params\r\n\t\tparams.require(:post).permit(:title, :content)\r\n\tend\r\n\r\n\tdef find_post\r\n\t\t@post = Post.find(params[:id])\r\n\tend\r\nend\r\n```\r\n"}, "commit"=>"Create Post"}
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mSQL (17.9ms)[0m  [1mINSERT INTO "posts" ("title", "content", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Getting Started with Rails"], ["content", "###This guide covers getting up and running with Ruby on Rails.\r\n\r\n#After reading this guide, you will know:\r\n\r\n- How to install Rails, create a new Rails application, and connect your application to a database.\r\n- The general layout of a Rails application.\r\n- The basic principles of MVC (Model, View, Controller) and RESTful design.\r\n- How to quickly generate the starting pieces of a Rails application.\r\n\r\n##Generating a Controller\r\nWith the model in hand, you can turn your attention to creating a matching controller. Again, we'll use the same generator we used before:\r\n```ruby\r\n$ bin/rails generate controller Comments\r\n```\r\nThis adds a form on the Article show page that creates a new comment by calling the CommentsController create action. The form_for call here uses an array, which will build a nested route, such as /articles/1/comments.\r\n\r\n##Sample ApplicationController:\r\n\r\n```ruby\r\nclass PostsController < ApplicationController\r\n\tbefore_action :find_post, only: [:show, :edit, :update, :destroy]\r\n\r\n\tdef index\r\n\t\t\r\n\tend\r\n\r\n\tdef new\r\n\t\t@post = Post.new\r\n\tend\r\n\r\n\tdef create\r\n\t\t@post = Post.new post_params\r\n\r\n\t\tif @post.save\r\n\t\t\tredirect_to @post, notice: \"Your post is saved Successfully!\"\r\n\t\telse \r\n\t\t\trender 'new', notice: \"Unable to save your post\"\r\n\t\tend\r\n\tend\r\n\r\n\tdef show\r\n\tend\r\n\r\n\tdef edit\r\n\tend\r\n\r\n\tdef update\r\n\t\tif @post.update post_params\r\n\t\t\tredirect_to @post, notice: \"Your article is successfully updated\"\r\n\t\telse \r\n\t\t\trender 'edit'\r\n\t\tend\r\n\tend\r\n\r\n\tdef destroy\r\n\t\t@post.destroy\r\n\t\tredirect_to posts_path\r\n\tend\r\n\r\n\tprivate\r\n\r\n\tdef post_params\r\n\t\tparams.require(:post).permit(:title, :content)\r\n\tend\r\n\r\n\tdef find_post\r\n\t\t@post = Post.find(params[:id])\r\n\tend\r\nend\r\n```\r\n"], ["created_at", "2016-05-01 10:32:48.487865"], ["updated_at", "2016-05-01 10:32:48.487865"]]
+  [1m[35m (7.2ms)[0m  COMMIT
+Redirected to http://localhost:3000/posts/1
+Completed 302 Found in 34ms (ActiveRecord: 25.7ms)
+
+
+Started GET "/posts/1" for ::1 at 2016-05-01 16:02:48 +0530
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1[0m  [["id", 1]]
+DEPRECATION WARNING: You are calling a `*_path` helper with the `only_path` option explicitly set to `false`. This option will stop working on path helpers in Rails 5. Use the corresponding `*_url` helper instead. (called from _app_views_posts_show_html_erb__3117686912010141093_70183265004420 at /Volumes/Yatheesha/personal-blog/app/views/posts/show.html.erb:17)
+DEPRECATION WARNING: You are calling a `*_path` helper with the `only_path` option explicitly set to `false`. This option will stop working on path helpers in Rails 5. Use the corresponding `*_url` helper instead. (called from _app_views_posts_show_html_erb__3117686912010141093_70183265004420 at /Volumes/Yatheesha/personal-blog/app/views/posts/show.html.erb:19)
+DEPRECATION WARNING: You are calling a `*_path` helper with the `only_path` option explicitly set to `false`. This option will stop working on path helpers in Rails 5. Use the corresponding `*_url` helper instead. (called from _app_views_posts_show_html_erb__3117686912010141093_70183265004420 at /Volumes/Yatheesha/personal-blog/app/views/posts/show.html.erb:21)
+  Rendered posts/show.html.erb within layouts/application (532.2ms)
+Completed 200 OK in 659ms (Views: 646.7ms | ActiveRecord: 0.3ms)
