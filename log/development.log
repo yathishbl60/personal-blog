@@ -1844,3 +1844,591 @@ Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde
 
 
 Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-05-01 12:05:40 +0530
+
+
+Started GET "/" for ::1 at 2016-05-01 12:31:15 +0530
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  [1m[35mPost Load (1.0ms)[0m  SELECT  "posts".* FROM "posts"  ORDER BY created_at desc LIMIT 3
+  Rendered welcome/index.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 315ms (Views: 291.7ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/posts/5" for ::1 at 2016-05-01 12:31:21 +0530
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1[0m  [["id", 5]]
+DEPRECATION WARNING: You are calling a `*_path` helper with the `only_path` option explicitly set to `false`. This option will stop working on path helpers in Rails 5. Use the corresponding `*_url` helper instead. (called from _app_views_posts_show_html_erb___3819995634465252334_70256025647220 at /Volumes/Yatheesha/personal-blog/app/views/posts/show.html.erb:17)
+DEPRECATION WARNING: You are calling a `*_path` helper with the `only_path` option explicitly set to `false`. This option will stop working on path helpers in Rails 5. Use the corresponding `*_url` helper instead. (called from _app_views_posts_show_html_erb___3819995634465252334_70256025647220 at /Volumes/Yatheesha/personal-blog/app/views/posts/show.html.erb:19)
+DEPRECATION WARNING: You are calling a `*_path` helper with the `only_path` option explicitly set to `false`. This option will stop working on path helpers in Rails 5. Use the corresponding `*_url` helper instead. (called from _app_views_posts_show_html_erb___3819995634465252334_70256025647220 at /Volumes/Yatheesha/personal-blog/app/views/posts/show.html.erb:21)
+  Rendered posts/show.html.erb within layouts/application (7.1ms)
+Completed 200 OK in 104ms (Views: 89.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/posts/5/edit" for ::1 at 2016-05-01 12:33:08 +0530
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"5"}
+  [1m[35mPost Load (0.1ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1  [["id", 5]]
+  Rendered posts/_form.html.erb (95.9ms)
+  Rendered posts/edit.html.erb within layouts/application (107.4ms)
+Completed 200 OK in 473ms (Views: 471.4ms | ActiveRecord: 0.1ms)
+
+
+Started PATCH "/posts/5" for ::1 at 2016-05-01 12:34:44 +0530
+Processing by PostsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zDbsIuur+0q5A4zkcJuje4wEKd6xTD96x3F7KP3i0cJQf6GrFtPSAvPM41yVQsaZNjv0Syi/VZXtRQrKt9Yqsw==", "post"=>{"title"=>"Fourth post", "content"=>"##This is a Second level Header\r\nBrunch flannel literally affogato, wolf kale chips poutine polaroid selvage cronut occupy you probably haven't heard of them fixie biodiesel. Street art man bun green juice, vice trust fund humblebrag keytar lo-fi quinoa. Williamsburg authentic butcher humblebrag, letterpress pour-over asymmetrical PBR&B mustache squid man bun chillwave. Poutine trust fund disrupt cliche kinfolk irony. Stumptown salvia brunch bespoke intelligentsia seitan before they sold out, trust fund photo booth listicle. Butcher fixie chicharrones meggings health goth tofu. Street art knausgaard direct trade poutine.\r\n\r\nMan braid letterpress fanny pack +1. Literally shabby chic leggings crucifix VHS, umami tofu celiac cred intelligentsia. Godard skateboard DIY blue bottle thundercats kombucha. Tilde hammock polaroid sriracha, narwhal pop-up disrupt waistcoat. Ramps chillwave neutra fashion axe. Pour-over bicycle rights kogi pork belly, man bun 90's XOXO iPhone shabby chic fashion axe tumblr blue bottle plaid forage. Whatever PBR&B bitters meditation, waistcoat next level chicharrones listicle cardigan fingerstache blog wolf vice leggings fashion axe. \r\n\r\n```ruby\r\nputs \"Hello World\"\r\n```\r\n-This one\r\n-Another one\r\n-No, another one\r\n\r\n###Third Header\r\nLetterpress flannel marfa, pop-up meh normcore banjo PBR&B chia. Meh man bun tousled +1, XOXO tacos vinyl 90's. Swag plaid mixtape, taxidermy jean shorts pour-over lumbersexual occupy tilde gentrify slow-carb. Biodiesel migas pour-over, aesthetic VHS pitchfork gochujang offal actually. You probably haven't heard of them ennui +1, distillery portland chia pour-over salvia whatever biodiesel photo booth tousled chartreuse. Brooklyn ugh quinoa, skateboard salvia cliche actually. Craft beer chambray schlitz, sriracha hoodie truffaut semiotics street art affogato.\r\n\r\nChillwave flannel cronut paleo ramps kombucha. Tacos food truck vice, raw denim keffiyeh intelligentsia franzen gochujang ennui brunch kale chips direct trade. Tilde readymade salvia bespoke, franzen pitchfork cardigan jean shorts iPhone fingerstache vice XOXO single-origin coffee. Etsy chia blog neutra, locavore tilde pug YOLO distillery health goth kitsch. Fashion axe waistcoat synth pickled leggings, mlkshk chillwave deep v iPhone franzen banjo humblebrag tilde pour-over. Scenester beard meggings sriracha pour-over trust fund green juice flannel messenger bag poutine, kickstarter echo park. Irony wayfarers knausgaard pork belly.\r\nOh. You need a little dummy text for your mockup? How quaint.\r\n\r\nI bet you’re still using Bootstrap too…"}, "commit"=>"Update Post", "id"=>"5"}
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1[0m  [["id", 5]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (521.4ms)[0m  [1mUPDATE "posts" SET "content" = ?, "updated_at" = ? WHERE "posts"."id" = ?[0m  [["content", "##This is a Second level Header\r\nBrunch flannel literally affogato, wolf kale chips poutine polaroid selvage cronut occupy you probably haven't heard of them fixie biodiesel. Street art man bun green juice, vice trust fund humblebrag keytar lo-fi quinoa. Williamsburg authentic butcher humblebrag, letterpress pour-over asymmetrical PBR&B mustache squid man bun chillwave. Poutine trust fund disrupt cliche kinfolk irony. Stumptown salvia brunch bespoke intelligentsia seitan before they sold out, trust fund photo booth listicle. Butcher fixie chicharrones meggings health goth tofu. Street art knausgaard direct trade poutine.\r\n\r\nMan braid letterpress fanny pack +1. Literally shabby chic leggings crucifix VHS, umami tofu celiac cred intelligentsia. Godard skateboard DIY blue bottle thundercats kombucha. Tilde hammock polaroid sriracha, narwhal pop-up disrupt waistcoat. Ramps chillwave neutra fashion axe. Pour-over bicycle rights kogi pork belly, man bun 90's XOXO iPhone shabby chic fashion axe tumblr blue bottle plaid forage. Whatever PBR&B bitters meditation, waistcoat next level chicharrones listicle cardigan fingerstache blog wolf vice leggings fashion axe. \r\n\r\n```ruby\r\nputs \"Hello World\"\r\n```\r\n-This one\r\n-Another one\r\n-No, another one\r\n\r\n###Third Header\r\nLetterpress flannel marfa, pop-up meh normcore banjo PBR&B chia. Meh man bun tousled +1, XOXO tacos vinyl 90's. Swag plaid mixtape, taxidermy jean shorts pour-over lumbersexual occupy tilde gentrify slow-carb. Biodiesel migas pour-over, aesthetic VHS pitchfork gochujang offal actually. You probably haven't heard of them ennui +1, distillery portland chia pour-over salvia whatever biodiesel photo booth tousled chartreuse. Brooklyn ugh quinoa, skateboard salvia cliche actually. Craft beer chambray schlitz, sriracha hoodie truffaut semiotics street art affogato.\r\n\r\nChillwave flannel cronut paleo ramps kombucha. Tacos food truck vice, raw denim keffiyeh intelligentsia franzen gochujang ennui brunch kale chips direct trade. Tilde readymade salvia bespoke, franzen pitchfork cardigan jean shorts iPhone fingerstache vice XOXO single-origin coffee. Etsy chia blog neutra, locavore tilde pug YOLO distillery health goth kitsch. Fashion axe waistcoat synth pickled leggings, mlkshk chillwave deep v iPhone franzen banjo humblebrag tilde pour-over. Scenester beard meggings sriracha pour-over trust fund green juice flannel messenger bag poutine, kickstarter echo park. Irony wayfarers knausgaard pork belly.\r\nOh. You need a little dummy text for your mockup? How quaint.\r\n\r\nI bet you’re still using Bootstrap too…"], ["updated_at", "2016-05-01 07:04:44.766515"], ["id", 5]]
+  [1m[35m (12.4ms)[0m  commit transaction
+Redirected to http://localhost:3000/posts/5
+Completed 302 Found in 540ms (ActiveRecord: 534.0ms)
+
+
+Started GET "/posts/5" for ::1 at 2016-05-01 12:34:45 +0530
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1[0m  [["id", 5]]
+DEPRECATION WARNING: You are calling a `*_path` helper with the `only_path` option explicitly set to `false`. This option will stop working on path helpers in Rails 5. Use the corresponding `*_url` helper instead. (called from _app_views_posts_show_html_erb___3819995634465252334_70256025647220 at /Volumes/Yatheesha/personal-blog/app/views/posts/show.html.erb:17)
+DEPRECATION WARNING: You are calling a `*_path` helper with the `only_path` option explicitly set to `false`. This option will stop working on path helpers in Rails 5. Use the corresponding `*_url` helper instead. (called from _app_views_posts_show_html_erb___3819995634465252334_70256025647220 at /Volumes/Yatheesha/personal-blog/app/views/posts/show.html.erb:19)
+DEPRECATION WARNING: You are calling a `*_path` helper with the `only_path` option explicitly set to `false`. This option will stop working on path helpers in Rails 5. Use the corresponding `*_url` helper instead. (called from _app_views_posts_show_html_erb___3819995634465252334_70256025647220 at /Volumes/Yatheesha/personal-blog/app/views/posts/show.html.erb:21)
+  Rendered posts/show.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 84ms (Views: 83.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/posts/5/edit" for ::1 at 2016-05-01 12:35:03 +0530
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"5"}
+  [1m[35mPost Load (0.1ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1  [["id", 5]]
+  Rendered posts/_form.html.erb (1.2ms)
+  Rendered posts/edit.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 20ms (Views: 18.7ms | ActiveRecord: 0.1ms)
+
+
+Started PATCH "/posts/5" for ::1 at 2016-05-01 12:35:13 +0530
+Processing by PostsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"frH/Tq11CdXBrdJ/sxwpWPpA5X9ujC+aCeaNqU1yd4ji+LLHUA0gnYtivcdWxUy6QH846vd/RXUj0vxLB0aM+Q==", "post"=>{"title"=>"Fourth post", "content"=>"##This is a Second level Header\r\nBrunch flannel literally affogato, wolf kale chips poutine polaroid selvage cronut occupy you probably haven't heard of them fixie biodiesel. Street art man bun green juice, vice trust fund humblebrag keytar lo-fi quinoa. Williamsburg authentic butcher humblebrag, letterpress pour-over asymmetrical PBR&B mustache squid man bun chillwave. Poutine trust fund disrupt cliche kinfolk irony. Stumptown salvia brunch bespoke intelligentsia seitan before they sold out, trust fund photo booth listicle. Butcher fixie chicharrones meggings health goth tofu. Street art knausgaard direct trade poutine.\r\n\r\nMan braid letterpress fanny pack +1. Literally shabby chic leggings crucifix VHS, umami tofu celiac cred intelligentsia. Godard skateboard DIY blue bottle thundercats kombucha. Tilde hammock polaroid sriracha, narwhal pop-up disrupt waistcoat. Ramps chillwave neutra fashion axe. Pour-over bicycle rights kogi pork belly, man bun 90's XOXO iPhone shabby chic fashion axe tumblr blue bottle plaid forage. Whatever PBR&B bitters meditation, waistcoat next level chicharrones listicle cardigan fingerstache blog wolf vice leggings fashion axe. \r\n\r\n```ruby\r\nputs \"Hello World\"\r\n```\r\n- This one\r\n- Another one\r\n- No, another one\r\n\r\n###Third Header\r\nLetterpress flannel marfa, pop-up meh normcore banjo PBR&B chia. Meh man bun tousled +1, XOXO tacos vinyl 90's. Swag plaid mixtape, taxidermy jean shorts pour-over lumbersexual occupy tilde gentrify slow-carb. Biodiesel migas pour-over, aesthetic VHS pitchfork gochujang offal actually. You probably haven't heard of them ennui +1, distillery portland chia pour-over salvia whatever biodiesel photo booth tousled chartreuse. Brooklyn ugh quinoa, skateboard salvia cliche actually. Craft beer chambray schlitz, sriracha hoodie truffaut semiotics street art affogato.\r\n\r\nChillwave flannel cronut paleo ramps kombucha. Tacos food truck vice, raw denim keffiyeh intelligentsia franzen gochujang ennui brunch kale chips direct trade. Tilde readymade salvia bespoke, franzen pitchfork cardigan jean shorts iPhone fingerstache vice XOXO single-origin coffee. Etsy chia blog neutra, locavore tilde pug YOLO distillery health goth kitsch. Fashion axe waistcoat synth pickled leggings, mlkshk chillwave deep v iPhone franzen banjo humblebrag tilde pour-over. Scenester beard meggings sriracha pour-over trust fund green juice flannel messenger bag poutine, kickstarter echo park. Irony wayfarers knausgaard pork belly.\r\nOh. You need a little dummy text for your mockup? How quaint.\r\n\r\nI bet you’re still using Bootstrap too…"}, "commit"=>"Update Post", "id"=>"5"}
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1[0m  [["id", 5]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "posts" SET "content" = ?, "updated_at" = ? WHERE "posts"."id" = ?[0m  [["content", "##This is a Second level Header\r\nBrunch flannel literally affogato, wolf kale chips poutine polaroid selvage cronut occupy you probably haven't heard of them fixie biodiesel. Street art man bun green juice, vice trust fund humblebrag keytar lo-fi quinoa. Williamsburg authentic butcher humblebrag, letterpress pour-over asymmetrical PBR&B mustache squid man bun chillwave. Poutine trust fund disrupt cliche kinfolk irony. Stumptown salvia brunch bespoke intelligentsia seitan before they sold out, trust fund photo booth listicle. Butcher fixie chicharrones meggings health goth tofu. Street art knausgaard direct trade poutine.\r\n\r\nMan braid letterpress fanny pack +1. Literally shabby chic leggings crucifix VHS, umami tofu celiac cred intelligentsia. Godard skateboard DIY blue bottle thundercats kombucha. Tilde hammock polaroid sriracha, narwhal pop-up disrupt waistcoat. Ramps chillwave neutra fashion axe. Pour-over bicycle rights kogi pork belly, man bun 90's XOXO iPhone shabby chic fashion axe tumblr blue bottle plaid forage. Whatever PBR&B bitters meditation, waistcoat next level chicharrones listicle cardigan fingerstache blog wolf vice leggings fashion axe. \r\n\r\n```ruby\r\nputs \"Hello World\"\r\n```\r\n- This one\r\n- Another one\r\n- No, another one\r\n\r\n###Third Header\r\nLetterpress flannel marfa, pop-up meh normcore banjo PBR&B chia. Meh man bun tousled +1, XOXO tacos vinyl 90's. Swag plaid mixtape, taxidermy jean shorts pour-over lumbersexual occupy tilde gentrify slow-carb. Biodiesel migas pour-over, aesthetic VHS pitchfork gochujang offal actually. You probably haven't heard of them ennui +1, distillery portland chia pour-over salvia whatever biodiesel photo booth tousled chartreuse. Brooklyn ugh quinoa, skateboard salvia cliche actually. Craft beer chambray schlitz, sriracha hoodie truffaut semiotics street art affogato.\r\n\r\nChillwave flannel cronut paleo ramps kombucha. Tacos food truck vice, raw denim keffiyeh intelligentsia franzen gochujang ennui brunch kale chips direct trade. Tilde readymade salvia bespoke, franzen pitchfork cardigan jean shorts iPhone fingerstache vice XOXO single-origin coffee. Etsy chia blog neutra, locavore tilde pug YOLO distillery health goth kitsch. Fashion axe waistcoat synth pickled leggings, mlkshk chillwave deep v iPhone franzen banjo humblebrag tilde pour-over. Scenester beard meggings sriracha pour-over trust fund green juice flannel messenger bag poutine, kickstarter echo park. Irony wayfarers knausgaard pork belly.\r\nOh. You need a little dummy text for your mockup? How quaint.\r\n\r\nI bet you’re still using Bootstrap too…"], ["updated_at", "2016-05-01 07:05:13.476705"], ["id", 5]]
+  [1m[35m (1.2ms)[0m  commit transaction
+Redirected to http://localhost:3000/posts/5
+Completed 302 Found in 5ms (ActiveRecord: 1.7ms)
+
+
+Started GET "/posts/5" for ::1 at 2016-05-01 12:35:13 +0530
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1[0m  [["id", 5]]
+DEPRECATION WARNING: You are calling a `*_path` helper with the `only_path` option explicitly set to `false`. This option will stop working on path helpers in Rails 5. Use the corresponding `*_url` helper instead. (called from _app_views_posts_show_html_erb___3819995634465252334_70256025647220 at /Volumes/Yatheesha/personal-blog/app/views/posts/show.html.erb:17)
+DEPRECATION WARNING: You are calling a `*_path` helper with the `only_path` option explicitly set to `false`. This option will stop working on path helpers in Rails 5. Use the corresponding `*_url` helper instead. (called from _app_views_posts_show_html_erb___3819995634465252334_70256025647220 at /Volumes/Yatheesha/personal-blog/app/views/posts/show.html.erb:19)
+DEPRECATION WARNING: You are calling a `*_path` helper with the `only_path` option explicitly set to `false`. This option will stop working on path helpers in Rails 5. Use the corresponding `*_url` helper instead. (called from _app_views_posts_show_html_erb___3819995634465252334_70256025647220 at /Volumes/Yatheesha/personal-blog/app/views/posts/show.html.erb:21)
+  Rendered posts/show.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 21ms (Views: 20.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/posts/5" for ::1 at 2016-05-01 12:41:02 +0530
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[35mPost Load (0.1ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1  [["id", 5]]
+DEPRECATION WARNING: You are calling a `*_path` helper with the `only_path` option explicitly set to `false`. This option will stop working on path helpers in Rails 5. Use the corresponding `*_url` helper instead. (called from _app_views_posts_show_html_erb___3819995634465252334_70256025647220 at /Volumes/Yatheesha/personal-blog/app/views/posts/show.html.erb:17)
+DEPRECATION WARNING: You are calling a `*_path` helper with the `only_path` option explicitly set to `false`. This option will stop working on path helpers in Rails 5. Use the corresponding `*_url` helper instead. (called from _app_views_posts_show_html_erb___3819995634465252334_70256025647220 at /Volumes/Yatheesha/personal-blog/app/views/posts/show.html.erb:19)
+DEPRECATION WARNING: You are calling a `*_path` helper with the `only_path` option explicitly set to `false`. This option will stop working on path helpers in Rails 5. Use the corresponding `*_url` helper instead. (called from _app_views_posts_show_html_erb___3819995634465252334_70256025647220 at /Volumes/Yatheesha/personal-blog/app/views/posts/show.html.erb:21)
+  Rendered posts/show.html.erb within layouts/application (2.7ms)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /Volumes/Yatheesha/personal-blog/app/assets/stylesheets/_normalize.css.scss to /Volumes/Yatheesha/personal-blog/app/assets/stylesheets/_normalize.scss. (called from _app_views_layouts_application_html_erb___1880218838035159003_70256049939200 at /Volumes/Yatheesha/personal-blog/app/views/layouts/application.html.erb:8)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /Volumes/Yatheesha/personal-blog/app/assets/stylesheets/_welcome.css.scss to /Volumes/Yatheesha/personal-blog/app/assets/stylesheets/_welcome.scss. (called from _app_views_layouts_application_html_erb___1880218838035159003_70256049939200 at /Volumes/Yatheesha/personal-blog/app/views/layouts/application.html.erb:8)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /Volumes/Yatheesha/personal-blog/app/assets/stylesheets/_posts_projects.css.scss to /Volumes/Yatheesha/personal-blog/app/assets/stylesheets/_posts_projects.scss. (called from _app_views_layouts_application_html_erb___1880218838035159003_70256049939200 at /Volumes/Yatheesha/personal-blog/app/views/layouts/application.html.erb:8)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /Volumes/Yatheesha/personal-blog/app/assets/stylesheets/_pygments.css.scss to /Volumes/Yatheesha/personal-blog/app/assets/stylesheets/_pygments.scss. (called from _app_views_layouts_application_html_erb___1880218838035159003_70256049939200 at /Volumes/Yatheesha/personal-blog/app/views/layouts/application.html.erb:8)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /Volumes/Yatheesha/personal-blog/app/assets/stylesheets/_normalize.css.scss to /Volumes/Yatheesha/personal-blog/app/assets/stylesheets/_normalize.scss. (called from _app_views_layouts_application_html_erb___1880218838035159003_70256049939200 at /Volumes/Yatheesha/personal-blog/app/views/layouts/application.html.erb:8)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /Volumes/Yatheesha/personal-blog/app/assets/stylesheets/_welcome.css.scss to /Volumes/Yatheesha/personal-blog/app/assets/stylesheets/_welcome.scss. (called from _app_views_layouts_application_html_erb___1880218838035159003_70256049939200 at /Volumes/Yatheesha/personal-blog/app/views/layouts/application.html.erb:8)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /Volumes/Yatheesha/personal-blog/app/assets/stylesheets/_posts_projects.css.scss to /Volumes/Yatheesha/personal-blog/app/assets/stylesheets/_posts_projects.scss. (called from _app_views_layouts_application_html_erb___1880218838035159003_70256049939200 at /Volumes/Yatheesha/personal-blog/app/views/layouts/application.html.erb:8)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /Volumes/Yatheesha/personal-blog/app/assets/stylesheets/_pygments.css.scss to /Volumes/Yatheesha/personal-blog/app/assets/stylesheets/_pygments.scss. (called from _app_views_layouts_application_html_erb___1880218838035159003_70256049939200 at /Volumes/Yatheesha/personal-blog/app/views/layouts/application.html.erb:8)
+Completed 200 OK in 253ms (Views: 251.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.self-519a41ce0f1e3a8ef88035c06a425809910f5d2dbb6c38f763ea60a0e181c3f0.css?body=1" for ::1 at 2016-05-01 12:41:02 +0530
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-05-01 12:41:02 +0530
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-05-01 12:41:02 +0530
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-05-01 12:41:02 +0530
+
+
+Started GET "/assets/posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-05-01 12:41:02 +0530
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-05-01 12:41:02 +0530
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-05-01 12:41:02 +0530
+
+
+Started GET "/posts/5" for ::1 at 2016-05-01 12:41:45 +0530
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1[0m  [["id", 5]]
+DEPRECATION WARNING: You are calling a `*_path` helper with the `only_path` option explicitly set to `false`. This option will stop working on path helpers in Rails 5. Use the corresponding `*_url` helper instead. (called from _app_views_posts_show_html_erb___3819995634465252334_70256025647220 at /Volumes/Yatheesha/personal-blog/app/views/posts/show.html.erb:17)
+DEPRECATION WARNING: You are calling a `*_path` helper with the `only_path` option explicitly set to `false`. This option will stop working on path helpers in Rails 5. Use the corresponding `*_url` helper instead. (called from _app_views_posts_show_html_erb___3819995634465252334_70256025647220 at /Volumes/Yatheesha/personal-blog/app/views/posts/show.html.erb:19)
+DEPRECATION WARNING: You are calling a `*_path` helper with the `only_path` option explicitly set to `false`. This option will stop working on path helpers in Rails 5. Use the corresponding `*_url` helper instead. (called from _app_views_posts_show_html_erb___3819995634465252334_70256025647220 at /Volumes/Yatheesha/personal-blog/app/views/posts/show.html.erb:21)
+  Rendered posts/show.html.erb within layouts/application (2.1ms)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /Volumes/Yatheesha/personal-blog/app/assets/stylesheets/_normalize.css.scss to /Volumes/Yatheesha/personal-blog/app/assets/stylesheets/_normalize.scss. (called from _app_views_layouts_application_html_erb___1880218838035159003_70256049939200 at /Volumes/Yatheesha/personal-blog/app/views/layouts/application.html.erb:8)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /Volumes/Yatheesha/personal-blog/app/assets/stylesheets/_welcome.css.scss to /Volumes/Yatheesha/personal-blog/app/assets/stylesheets/_welcome.scss. (called from _app_views_layouts_application_html_erb___1880218838035159003_70256049939200 at /Volumes/Yatheesha/personal-blog/app/views/layouts/application.html.erb:8)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /Volumes/Yatheesha/personal-blog/app/assets/stylesheets/_posts_projects.css.scss to /Volumes/Yatheesha/personal-blog/app/assets/stylesheets/_posts_projects.scss. (called from _app_views_layouts_application_html_erb___1880218838035159003_70256049939200 at /Volumes/Yatheesha/personal-blog/app/views/layouts/application.html.erb:8)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /Volumes/Yatheesha/personal-blog/app/assets/stylesheets/_pygments.css.scss to /Volumes/Yatheesha/personal-blog/app/assets/stylesheets/_pygments.scss. (called from _app_views_layouts_application_html_erb___1880218838035159003_70256049939200 at /Volumes/Yatheesha/personal-blog/app/views/layouts/application.html.erb:8)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /Volumes/Yatheesha/personal-blog/app/assets/stylesheets/_normalize.css.scss to /Volumes/Yatheesha/personal-blog/app/assets/stylesheets/_normalize.scss. (called from _app_views_layouts_application_html_erb___1880218838035159003_70256049939200 at /Volumes/Yatheesha/personal-blog/app/views/layouts/application.html.erb:8)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /Volumes/Yatheesha/personal-blog/app/assets/stylesheets/_welcome.css.scss to /Volumes/Yatheesha/personal-blog/app/assets/stylesheets/_welcome.scss. (called from _app_views_layouts_application_html_erb___1880218838035159003_70256049939200 at /Volumes/Yatheesha/personal-blog/app/views/layouts/application.html.erb:8)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /Volumes/Yatheesha/personal-blog/app/assets/stylesheets/_posts_projects.css.scss to /Volumes/Yatheesha/personal-blog/app/assets/stylesheets/_posts_projects.scss. (called from _app_views_layouts_application_html_erb___1880218838035159003_70256049939200 at /Volumes/Yatheesha/personal-blog/app/views/layouts/application.html.erb:8)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /Volumes/Yatheesha/personal-blog/app/assets/stylesheets/_pygments.css.scss to /Volumes/Yatheesha/personal-blog/app/assets/stylesheets/_pygments.scss. (called from _app_views_layouts_application_html_erb___1880218838035159003_70256049939200 at /Volumes/Yatheesha/personal-blog/app/views/layouts/application.html.erb:8)
+Completed 200 OK in 193ms (Views: 192.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.self-0a20d8eeb396e0a9b2a583c486d6e54e7ee1ba8688ffa32bc6674c71732a8077.css?body=1" for ::1 at 2016-05-01 12:41:46 +0530
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-05-01 12:41:46 +0530
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-05-01 12:41:46 +0530
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-05-01 12:41:46 +0530
+
+
+Started GET "/assets/posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-05-01 12:41:46 +0530
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-05-01 12:41:46 +0530
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-05-01 12:41:46 +0530
+
+
+Started GET "/posts/5/edit" for ::1 at 2016-05-01 12:42:38 +0530
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"5"}
+  [1m[35mPost Load (0.1ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1  [["id", 5]]
+  Rendered posts/_form.html.erb (2.2ms)
+  Rendered posts/edit.html.erb within layouts/application (14.6ms)
+Completed 200 OK in 336ms (Views: 335.0ms | ActiveRecord: 0.1ms)
+
+
+Started PATCH "/posts/5" for ::1 at 2016-05-01 12:42:59 +0530
+Processing by PostsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"hdlADfOUwkjnKisssKMLF/HZjAKi0GVdc9IKFeHE71gZkA2EDuzrAK3lRJRVem71S+ZRlzsjD7JZ5nv3q/AUKQ==", "post"=>{"title"=>"Fourth post", "content"=>"##This is a Second level Header\r\nBrunch flannel literally affogato, wolf kale chips poutine polaroid selvage cronut occupy you probably haven't heard of them fixie biodiesel. Street art man bun green juice, vice trust fund humblebrag keytar lo-fi quinoa. Williamsburg authentic butcher humblebrag, letterpress pour-over asymmetrical PBR&B mustache squid man bun chillwave. Poutine trust fund disrupt cliche kinfolk irony. Stumptown salvia brunch bespoke intelligentsia seitan before they sold out, trust fund photo booth listicle. Butcher fixie chicharrones meggings health goth tofu. Street art knausgaard direct trade poutine.\r\n\r\nMan braid letterpress fanny pack +1. Literally shabby chic leggings crucifix VHS, umami tofu celiac cred intelligentsia. Godard skateboard DIY blue bottle thundercats kombucha. Tilde hammock polaroid sriracha, narwhal pop-up disrupt waistcoat. Ramps chillwave neutra fashion axe. Pour-over bicycle rights kogi pork belly, man bun 90's XOXO iPhone shabby chic fashion axe tumblr blue bottle plaid forage. Whatever PBR&B bitters meditation, waistcoat next level chicharrones listicle cardigan fingerstache blog wolf vice leggings fashion axe. \r\n\r\n```ruby\r\nputs \"Hello World\"\r\n```\r\n- This one\r\n- Another one\r\n- No, another one\r\n\r\n```ruby\r\nclass PostsController < ApplicationController\r\n\tbefore_action :find_post, only: [:show, :edit, :update, :destroy]\r\n\r\n\tdef index\r\n\t\t\r\n\tend\r\n\r\n\tdef new\r\n\t\t@post = Post.new\r\n\tend\r\n\r\n\tdef create\r\n\t\t@post = Post.new post_params\r\n\r\n\t\tif @post.save\r\n\t\t\tredirect_to @post, notice: \"Your post is saved Successfully!\"\r\n\t\telse \r\n\t\t\trender 'new', notice: \"Unable to save your post\"\r\n\t\tend\r\n\tend\r\n\r\n\tdef show\r\n\tend\r\n\r\n\tdef edit\r\n\tend\r\n\r\n\tdef update\r\n\t\tif @post.update post_params\r\n\t\t\tredirect_to @post, notice: \"Your article is successfully updated\"\r\n\t\telse \r\n\t\t\trender 'edit'\r\n\t\tend\r\n\tend\r\n\r\n\tdef destroy\r\n\t\t@post.destroy\r\n\t\tredirect_to posts_path\r\n\tend\r\n\r\n\tprivate\r\n\r\n\tdef post_params\r\n\t\tparams.require(:post).permit(:title, :content)\r\n\tend\r\n\r\n\tdef find_post\r\n\t\t@post = Post.find(params[:id])\r\n\tend\r\nend\r\n```\r\n###Third Header\r\nLetterpress flannel marfa, pop-up meh normcore banjo PBR&B chia. Meh man bun tousled +1, XOXO tacos vinyl 90's. Swag plaid mixtape, taxidermy jean shorts pour-over lumbersexual occupy tilde gentrify slow-carb. Biodiesel migas pour-over, aesthetic VHS pitchfork gochujang offal actually. You probably haven't heard of them ennui +1, distillery portland chia pour-over salvia whatever biodiesel photo booth tousled chartreuse. Brooklyn ugh quinoa, skateboard salvia cliche actually. Craft beer chambray schlitz, sriracha hoodie truffaut semiotics street art affogato.\r\n\r\nChillwave flannel cronut paleo ramps kombucha. Tacos food truck vice, raw denim keffiyeh intelligentsia franzen gochujang ennui brunch kale chips direct trade. Tilde readymade salvia bespoke, franzen pitchfork cardigan jean shorts iPhone fingerstache vice XOXO single-origin coffee. Etsy chia blog neutra, locavore tilde pug YOLO distillery health goth kitsch. Fashion axe waistcoat synth pickled leggings, mlkshk chillwave deep v iPhone franzen banjo humblebrag tilde pour-over. Scenester beard meggings sriracha pour-over trust fund green juice flannel messenger bag poutine, kickstarter echo park. Irony wayfarers knausgaard pork belly.\r\nOh. You need a little dummy text for your mockup? How quaint.\r\n\r\nI bet you’re still using Bootstrap too…"}, "commit"=>"Update Post", "id"=>"5"}
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1[0m  [["id", 5]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mUPDATE "posts" SET "content" = ?, "updated_at" = ? WHERE "posts"."id" = ?[0m  [["content", "##This is a Second level Header\r\nBrunch flannel literally affogato, wolf kale chips poutine polaroid selvage cronut occupy you probably haven't heard of them fixie biodiesel. Street art man bun green juice, vice trust fund humblebrag keytar lo-fi quinoa. Williamsburg authentic butcher humblebrag, letterpress pour-over asymmetrical PBR&B mustache squid man bun chillwave. Poutine trust fund disrupt cliche kinfolk irony. Stumptown salvia brunch bespoke intelligentsia seitan before they sold out, trust fund photo booth listicle. Butcher fixie chicharrones meggings health goth tofu. Street art knausgaard direct trade poutine.\r\n\r\nMan braid letterpress fanny pack +1. Literally shabby chic leggings crucifix VHS, umami tofu celiac cred intelligentsia. Godard skateboard DIY blue bottle thundercats kombucha. Tilde hammock polaroid sriracha, narwhal pop-up disrupt waistcoat. Ramps chillwave neutra fashion axe. Pour-over bicycle rights kogi pork belly, man bun 90's XOXO iPhone shabby chic fashion axe tumblr blue bottle plaid forage. Whatever PBR&B bitters meditation, waistcoat next level chicharrones listicle cardigan fingerstache blog wolf vice leggings fashion axe. \r\n\r\n```ruby\r\nputs \"Hello World\"\r\n```\r\n- This one\r\n- Another one\r\n- No, another one\r\n\r\n```ruby\r\nclass PostsController < ApplicationController\r\n\tbefore_action :find_post, only: [:show, :edit, :update, :destroy]\r\n\r\n\tdef index\r\n\t\t\r\n\tend\r\n\r\n\tdef new\r\n\t\t@post = Post.new\r\n\tend\r\n\r\n\tdef create\r\n\t\t@post = Post.new post_params\r\n\r\n\t\tif @post.save\r\n\t\t\tredirect_to @post, notice: \"Your post is saved Successfully!\"\r\n\t\telse \r\n\t\t\trender 'new', notice: \"Unable to save your post\"\r\n\t\tend\r\n\tend\r\n\r\n\tdef show\r\n\tend\r\n\r\n\tdef edit\r\n\tend\r\n\r\n\tdef update\r\n\t\tif @post.update post_params\r\n\t\t\tredirect_to @post, notice: \"Your article is successfully updated\"\r\n\t\telse \r\n\t\t\trender 'edit'\r\n\t\tend\r\n\tend\r\n\r\n\tdef destroy\r\n\t\t@post.destroy\r\n\t\tredirect_to posts_path\r\n\tend\r\n\r\n\tprivate\r\n\r\n\tdef post_params\r\n\t\tparams.require(:post).permit(:title, :content)\r\n\tend\r\n\r\n\tdef find_post\r\n\t\t@post = Post.find(params[:id])\r\n\tend\r\nend\r\n```\r\n###Third Header\r\nLetterpress flannel marfa, pop-up meh normcore banjo PBR&B chia. Meh man bun tousled +1, XOXO tacos vinyl 90's. Swag plaid mixtape, taxidermy jean shorts pour-over lumbersexual occupy tilde gentrify slow-carb. Biodiesel migas pour-over, aesthetic VHS pitchfork gochujang offal actually. You probably haven't heard of them ennui +1, distillery portland chia pour-over salvia whatever biodiesel photo booth tousled chartreuse. Brooklyn ugh quinoa, skateboard salvia cliche actually. Craft beer chambray schlitz, sriracha hoodie truffaut semiotics street art affogato.\r\n\r\nChillwave flannel cronut paleo ramps kombucha. Tacos food truck vice, raw denim keffiyeh intelligentsia franzen gochujang ennui brunch kale chips direct trade. Tilde readymade salvia bespoke, franzen pitchfork cardigan jean shorts iPhone fingerstache vice XOXO single-origin coffee. Etsy chia blog neutra, locavore tilde pug YOLO distillery health goth kitsch. Fashion axe waistcoat synth pickled leggings, mlkshk chillwave deep v iPhone franzen banjo humblebrag tilde pour-over. Scenester beard meggings sriracha pour-over trust fund green juice flannel messenger bag poutine, kickstarter echo park. Irony wayfarers knausgaard pork belly.\r\nOh. You need a little dummy text for your mockup? How quaint.\r\n\r\nI bet you’re still using Bootstrap too…"], ["updated_at", "2016-05-01 07:12:59.135052"], ["id", 5]]
+  [1m[35m (289.5ms)[0m  commit transaction
+Redirected to http://localhost:3000/posts/5
+Completed 302 Found in 295ms (ActiveRecord: 290.2ms)
+
+
+Started GET "/posts/5" for ::1 at 2016-05-01 12:42:59 +0530
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1[0m  [["id", 5]]
+DEPRECATION WARNING: You are calling a `*_path` helper with the `only_path` option explicitly set to `false`. This option will stop working on path helpers in Rails 5. Use the corresponding `*_url` helper instead. (called from _app_views_posts_show_html_erb___3819995634465252334_70256025647220 at /Volumes/Yatheesha/personal-blog/app/views/posts/show.html.erb:17)
+DEPRECATION WARNING: You are calling a `*_path` helper with the `only_path` option explicitly set to `false`. This option will stop working on path helpers in Rails 5. Use the corresponding `*_url` helper instead. (called from _app_views_posts_show_html_erb___3819995634465252334_70256025647220 at /Volumes/Yatheesha/personal-blog/app/views/posts/show.html.erb:19)
+DEPRECATION WARNING: You are calling a `*_path` helper with the `only_path` option explicitly set to `false`. This option will stop working on path helpers in Rails 5. Use the corresponding `*_url` helper instead. (called from _app_views_posts_show_html_erb___3819995634465252334_70256025647220 at /Volumes/Yatheesha/personal-blog/app/views/posts/show.html.erb:21)
+  Rendered posts/show.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 14ms (Views: 13.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/posts/5" for ::1 at 2016-05-01 12:45:42 +0530
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[35mPost Load (0.1ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1  [["id", 5]]
+  Rendered posts/show.html.erb within layouts/application (10.0ms)
+Completed 500 Internal Server Error in 28ms (ActiveRecord: 0.6ms)
+
+ActionView::Template::Error (uninitialized constant ApplicationHelper::HTMLWithPygments::Pygments):
+     6: 	</header>
+     7: 
+     8: 	<div id="content">
+     9: 		<%= markdown @post.content %>
+    10: 	</div>
+    11: 
+    12: 	<hr>
+  app/helpers/application_helper.rb:5:in `block_code'
+  app/helpers/application_helper.rb:21:in `render'
+  app/helpers/application_helper.rb:21:in `markdown'
+  app/views/posts/show.html.erb:9:in `_app_views_posts_show_html_erb___3819995634465252334_70256025647220'
+
+
+  Rendered /Users/yatheesha/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.5ms)
+  Rendered /Users/yatheesha/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.8ms)
+  Rendered /Users/yatheesha/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/yatheesha/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (81.9ms)
+  Rendered /Users/yatheesha/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/yatheesha/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/yatheesha/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/yatheesha/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/yatheesha/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (58.9ms)
+  Rendered /Users/yatheesha/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/yatheesha/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/yatheesha/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (133.1ms)
+
+
+Started GET "/posts/5" for ::1 at 2016-05-01 12:47:26 +0530
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[35mPost Load (0.3ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1  [["id", 5]]
+  Rendered posts/show.html.erb within layouts/application (7.8ms)
+Completed 500 Internal Server Error in 44ms (ActiveRecord: 0.5ms)
+
+ActionView::Template::Error (uninitialized constant ApplicationHelper::HTMLWithPygments):
+     6: 	</header>
+     7: 
+     8: 	<div id="content">
+     9: 		<%= markdown @post.content %>
+    10: 	</div>
+    11: 
+    12: 	<hr>
+  app/helpers/application_helper.rb:10:in `markdown'
+  app/views/posts/show.html.erb:9:in `_app_views_posts_show_html_erb__2760856543313162156_70170754618380'
+
+
+  Rendered /Users/yatheesha/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.9ms)
+  Rendered /Users/yatheesha/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered /Users/yatheesha/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/yatheesha/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (58.5ms)
+  Rendered /Users/yatheesha/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/yatheesha/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/yatheesha/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/yatheesha/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/yatheesha/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (59.1ms)
+  Rendered /Users/yatheesha/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/yatheesha/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/yatheesha/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (123.4ms)
+
+
+Started GET "/" for ::1 at 2016-05-01 12:47:31 +0530
+Processing by WelcomeController#index as HTML
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT  "posts".* FROM "posts"  ORDER BY created_at desc LIMIT 3[0m
+  Rendered welcome/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 310ms (Views: 309.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/posts" for ::1 at 2016-05-01 12:47:42 +0530
+Processing by PostsController#index as HTML
+  Rendered posts/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 15ms (Views: 14.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/5" for ::1 at 2016-05-01 12:47:45 +0530
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[35mPost Load (0.1ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1  [["id", 5]]
+  Rendered posts/show.html.erb within layouts/application (5.2ms)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.1ms)
+
+ActionView::Template::Error (uninitialized constant ApplicationHelper::HTMLWithPygments):
+     6: 	</header>
+     7: 
+     8: 	<div id="content">
+     9: 		<%= markdown @post.content %>
+    10: 	</div>
+    11: 
+    12: 	<hr>
+  app/helpers/application_helper.rb:10:in `markdown'
+  app/views/posts/show.html.erb:9:in `_app_views_posts_show_html_erb__2760856543313162156_70170754618380'
+
+
+  Rendered /Users/yatheesha/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.1ms)
+  Rendered /Users/yatheesha/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.8ms)
+  Rendered /Users/yatheesha/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/yatheesha/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (61.5ms)
+  Rendered /Users/yatheesha/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/yatheesha/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/yatheesha/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/yatheesha/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/yatheesha/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (48.8ms)
+  Rendered /Users/yatheesha/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/yatheesha/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/yatheesha/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (115.1ms)
+
+
+Started GET "/posts/5" for ::1 at 2016-05-01 12:49:01 +0530
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[35mPost Load (0.2ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1  [["id", 5]]
+  Rendered posts/show.html.erb within layouts/application (13.2ms)
+Completed 500 Internal Server Error in 61ms (ActiveRecord: 0.6ms)
+
+ActionView::Template::Error (uninitialized constant ApplicationHelper::HTMLwithPygments::Pygments):
+     6: 	</header>
+     7: 
+     8: 	<div id="content">
+     9: 		<%= markdown @post.content %>
+    10: 	</div>
+    11: 
+    12: 	<hr>
+  app/helpers/application_helper.rb:5:in `block_code'
+  app/helpers/application_helper.rb:20:in `render'
+  app/helpers/application_helper.rb:20:in `markdown'
+  app/views/posts/show.html.erb:9:in `_app_views_posts_show_html_erb__3143640597515811873_70299795437500'
+
+
+  Rendered /Users/yatheesha/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.4ms)
+  Rendered /Users/yatheesha/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered /Users/yatheesha/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Users/yatheesha/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (66.1ms)
+  Rendered /Users/yatheesha/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/yatheesha/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.8ms)
+  Rendered /Users/yatheesha/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/yatheesha/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/yatheesha/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (63.5ms)
+  Rendered /Users/yatheesha/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/yatheesha/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/yatheesha/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (124.6ms)
+
+
+Started GET "/" for ::1 at 2016-05-01 12:49:13 +0530
+Processing by WelcomeController#index as HTML
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT  "posts".* FROM "posts"  ORDER BY created_at desc LIMIT 3[0m
+  Rendered welcome/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 294ms (Views: 292.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2016-05-01 12:50:11 +0530
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  [1m[35mPost Load (0.3ms)[0m  SELECT  "posts".* FROM "posts"  ORDER BY created_at desc LIMIT 3
+  Rendered welcome/index.html.erb within layouts/application (9.3ms)
+Completed 200 OK in 260ms (Views: 240.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.self-0a20d8eeb396e0a9b2a583c486d6e54e7ee1ba8688ffa32bc6674c71732a8077.css?body=1" for ::1 at 2016-05-01 12:50:11 +0530
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-05-01 12:50:11 +0530
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-05-01 12:50:11 +0530
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-05-01 12:50:11 +0530
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-05-01 12:50:11 +0530
+
+
+Started GET "/assets/posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-05-01 12:50:11 +0530
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-05-01 12:50:11 +0530
+
+
+Started GET "/posts/5" for ::1 at 2016-05-01 12:50:16 +0530
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1[0m  [["id", 5]]
+  Rendered posts/show.html.erb within layouts/application (19.6ms)
+Completed 500 Internal Server Error in 39ms (ActiveRecord: 0.2ms)
+
+ActionView::Template::Error (uninitialized constant ApplicationHelper::HTMLwithPygments::Pygments):
+     6: 	</header>
+     7: 
+     8: 	<div id="content">
+     9: 		<%= markdown @post.content %>
+    10: 	</div>
+    11: 
+    12: 	<hr>
+  app/helpers/application_helper.rb:5:in `block_code'
+  app/helpers/application_helper.rb:20:in `render'
+  app/helpers/application_helper.rb:20:in `markdown'
+  app/views/posts/show.html.erb:9:in `_app_views_posts_show_html_erb__2367207106836126450_70129379221120'
+
+
+  Rendered /Users/yatheesha/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.3ms)
+  Rendered /Users/yatheesha/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /Users/yatheesha/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/yatheesha/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (59.0ms)
+  Rendered /Users/yatheesha/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/yatheesha/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/yatheesha/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/yatheesha/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/yatheesha/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (112.3ms)
+  Rendered /Users/yatheesha/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/yatheesha/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/yatheesha/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (176.8ms)
+
+
+Started GET "/" for ::1 at 2016-05-01 12:51:19 +0530
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+ActionController::RoutingError (uninitialized constant About):
+  app/helpers/application_helper.rb:21:in `<top (required)>'
+  app/controllers/application_controller.rb:1:in `<top (required)>'
+  app/controllers/welcome_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /Users/yatheesha/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /Users/yatheesha/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.2ms)
+  Rendered /Users/yatheesha/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_table.html.erb (11.9ms)
+  Rendered /Users/yatheesha/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (11.3ms)
+  Rendered /Users/yatheesha/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (107.4ms)
+  Rendered /Users/yatheesha/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/yatheesha/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/yatheesha/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/yatheesha/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/yatheesha/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (70.9ms)
+  Rendered /Users/yatheesha/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/yatheesha/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/yatheesha/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (132.5ms)
+
+
+Started GET "/" for ::1 at 2016-05-01 12:51:40 +0530
+Processing by WelcomeController#index as HTML
+  [1m[35mPost Load (0.3ms)[0m  SELECT  "posts".* FROM "posts"  ORDER BY created_at desc LIMIT 3
+  Rendered welcome/index.html.erb within layouts/application (6.1ms)
+Completed 200 OK in 284ms (Views: 273.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-05-01 12:51:41 +0530
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-05-01 12:51:41 +0530
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-05-01 12:51:41 +0530
+
+
+Started GET "/assets/application.self-0a20d8eeb396e0a9b2a583c486d6e54e7ee1ba8688ffa32bc6674c71732a8077.css?body=1" for ::1 at 2016-05-01 12:51:41 +0530
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-05-01 12:51:41 +0530
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-05-01 12:51:41 +0530
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-05-01 12:51:41 +0530
+
+
+Started GET "/posts/5" for ::1 at 2016-05-01 12:51:47 +0530
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1[0m  [["id", 5]]
+  Rendered posts/show.html.erb within layouts/application (10.6ms)
+Completed 500 Internal Server Error in 29ms (ActiveRecord: 0.3ms)
+
+ActionView::Template::Error (uninitialized constant ApplicationHelper::HTMLwithPygments::Pygments):
+     6: 	</header>
+     7: 
+     8: 	<div id="content">
+     9: 		<%= markdown @post.content %>
+    10: 	</div>
+    11: 
+    12: 	<hr>
+  app/helpers/application_helper.rb:4:in `block_code'
+  app/helpers/application_helper.rb:18:in `render'
+  app/helpers/application_helper.rb:18:in `markdown'
+  app/views/posts/show.html.erb:9:in `_app_views_posts_show_html_erb___2595214752664200220_70343372478920'
+
+
+  Rendered /Users/yatheesha/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.5ms)
+  Rendered /Users/yatheesha/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /Users/yatheesha/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/yatheesha/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (56.7ms)
+  Rendered /Users/yatheesha/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/yatheesha/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/yatheesha/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/yatheesha/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/yatheesha/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (52.1ms)
+  Rendered /Users/yatheesha/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/yatheesha/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/yatheesha/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (114.4ms)
+
+
+Started GET "/posts/5" for ::1 at 2016-05-01 12:54:46 +0530
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[35mPost Load (0.2ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1  [["id", 5]]
+DEPRECATION WARNING: You are calling a `*_path` helper with the `only_path` option explicitly set to `false`. This option will stop working on path helpers in Rails 5. Use the corresponding `*_url` helper instead. (called from _app_views_posts_show_html_erb___2372386047099104820_70184148868140 at /Volumes/Yatheesha/personal-blog/app/views/posts/show.html.erb:17)
+DEPRECATION WARNING: You are calling a `*_path` helper with the `only_path` option explicitly set to `false`. This option will stop working on path helpers in Rails 5. Use the corresponding `*_url` helper instead. (called from _app_views_posts_show_html_erb___2372386047099104820_70184148868140 at /Volumes/Yatheesha/personal-blog/app/views/posts/show.html.erb:19)
+DEPRECATION WARNING: You are calling a `*_path` helper with the `only_path` option explicitly set to `false`. This option will stop working on path helpers in Rails 5. Use the corresponding `*_url` helper instead. (called from _app_views_posts_show_html_erb___2372386047099104820_70184148868140 at /Volumes/Yatheesha/personal-blog/app/views/posts/show.html.erb:21)
+  Rendered posts/show.html.erb within layouts/application (525.4ms)
+Completed 200 OK in 918ms (Views: 869.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-05-01 12:54:47 +0530
+
+
+Started GET "/assets/application.self-0a20d8eeb396e0a9b2a583c486d6e54e7ee1ba8688ffa32bc6674c71732a8077.css?body=1" for ::1 at 2016-05-01 12:54:47 +0530
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-05-01 12:54:47 +0530
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-05-01 12:54:47 +0530
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-05-01 12:54:47 +0530
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-05-01 12:54:47 +0530
+
+
+Started GET "/assets/posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-05-01 12:54:47 +0530
+
+
+Started GET "/" for ::1 at 2016-05-01 12:55:01 +0530
+Processing by WelcomeController#index as HTML
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT  "posts".* FROM "posts"  ORDER BY created_at desc LIMIT 3[0m
+  Rendered welcome/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 17ms (Views: 15.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2016-05-01 12:55:50 +0530
+Processing by WelcomeController#index as HTML
+  [1m[35mPost Load (0.2ms)[0m  SELECT  "posts".* FROM "posts"  ORDER BY created_at desc LIMIT 3
+  Rendered welcome/index.html.erb within layouts/application (1.5ms)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /Volumes/Yatheesha/personal-blog/app/assets/stylesheets/_normalize.css.scss to /Volumes/Yatheesha/personal-blog/app/assets/stylesheets/_normalize.scss. (called from _app_views_layouts_application_html_erb___2506799303582217183_70184148845540 at /Volumes/Yatheesha/personal-blog/app/views/layouts/application.html.erb:8)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /Volumes/Yatheesha/personal-blog/app/assets/stylesheets/_welcome.css.scss to /Volumes/Yatheesha/personal-blog/app/assets/stylesheets/_welcome.scss. (called from _app_views_layouts_application_html_erb___2506799303582217183_70184148845540 at /Volumes/Yatheesha/personal-blog/app/views/layouts/application.html.erb:8)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /Volumes/Yatheesha/personal-blog/app/assets/stylesheets/_posts_projects.css.scss to /Volumes/Yatheesha/personal-blog/app/assets/stylesheets/_posts_projects.scss. (called from _app_views_layouts_application_html_erb___2506799303582217183_70184148845540 at /Volumes/Yatheesha/personal-blog/app/views/layouts/application.html.erb:8)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /Volumes/Yatheesha/personal-blog/app/assets/stylesheets/_pygments.css.scss to /Volumes/Yatheesha/personal-blog/app/assets/stylesheets/_pygments.scss. (called from _app_views_layouts_application_html_erb___2506799303582217183_70184148845540 at /Volumes/Yatheesha/personal-blog/app/views/layouts/application.html.erb:8)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /Volumes/Yatheesha/personal-blog/app/assets/stylesheets/_normalize.css.scss to /Volumes/Yatheesha/personal-blog/app/assets/stylesheets/_normalize.scss. (called from _app_views_layouts_application_html_erb___2506799303582217183_70184148845540 at /Volumes/Yatheesha/personal-blog/app/views/layouts/application.html.erb:8)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /Volumes/Yatheesha/personal-blog/app/assets/stylesheets/_welcome.css.scss to /Volumes/Yatheesha/personal-blog/app/assets/stylesheets/_welcome.scss. (called from _app_views_layouts_application_html_erb___2506799303582217183_70184148845540 at /Volumes/Yatheesha/personal-blog/app/views/layouts/application.html.erb:8)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /Volumes/Yatheesha/personal-blog/app/assets/stylesheets/_posts_projects.css.scss to /Volumes/Yatheesha/personal-blog/app/assets/stylesheets/_posts_projects.scss. (called from _app_views_layouts_application_html_erb___2506799303582217183_70184148845540 at /Volumes/Yatheesha/personal-blog/app/views/layouts/application.html.erb:8)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /Volumes/Yatheesha/personal-blog/app/assets/stylesheets/_pygments.css.scss to /Volumes/Yatheesha/personal-blog/app/assets/stylesheets/_pygments.scss. (called from _app_views_layouts_application_html_erb___2506799303582217183_70184148845540 at /Volumes/Yatheesha/personal-blog/app/views/layouts/application.html.erb:8)
+Completed 200 OK in 256ms (Views: 255.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.self-503568575fea43de097a9ecf5e4a270d326e503937ae959e5afbd35f39ba018f.css?body=1" for ::1 at 2016-05-01 12:55:51 +0530
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-05-01 12:55:51 +0530
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-05-01 12:55:51 +0530
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-05-01 12:55:51 +0530
+
+
+Started GET "/assets/posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-05-01 12:55:51 +0530
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-05-01 12:55:51 +0530
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-05-01 12:55:51 +0530
+
+
+Started GET "/posts/5" for ::1 at 2016-05-01 12:55:58 +0530
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1[0m  [["id", 5]]
+DEPRECATION WARNING: You are calling a `*_path` helper with the `only_path` option explicitly set to `false`. This option will stop working on path helpers in Rails 5. Use the corresponding `*_url` helper instead. (called from _app_views_posts_show_html_erb___2372386047099104820_70184148868140 at /Volumes/Yatheesha/personal-blog/app/views/posts/show.html.erb:17)
+DEPRECATION WARNING: You are calling a `*_path` helper with the `only_path` option explicitly set to `false`. This option will stop working on path helpers in Rails 5. Use the corresponding `*_url` helper instead. (called from _app_views_posts_show_html_erb___2372386047099104820_70184148868140 at /Volumes/Yatheesha/personal-blog/app/views/posts/show.html.erb:19)
+DEPRECATION WARNING: You are calling a `*_path` helper with the `only_path` option explicitly set to `false`. This option will stop working on path helpers in Rails 5. Use the corresponding `*_url` helper instead. (called from _app_views_posts_show_html_erb___2372386047099104820_70184148868140 at /Volumes/Yatheesha/personal-blog/app/views/posts/show.html.erb:21)
+  Rendered posts/show.html.erb within layouts/application (13.5ms)
+Completed 200 OK in 29ms (Views: 28.0ms | ActiveRecord: 0.1ms)

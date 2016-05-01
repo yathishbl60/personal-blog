@@ -22,7 +22,10 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0', group: :doc
-
+# pygments.rb exposes the pygments syntax highlighter to Ruby
+gem 'pygments.rb', '~> 0.6.3'
+# A fast, safe and extensible Markdown to (X)HTML parser
+gem 'redcarpet', '~> 3.3', '>= 3.3.4'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
