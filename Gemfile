@@ -31,6 +31,8 @@ gem 'friendly_id', '~> 5.1'
 gem 'will_paginate', '~> 3.1'
 # Send e-mail straight from forms in Rails with I18n, validations, attachments and request information.
 gem 'mail_form', '~> 1.5', '>= 1.5.1'
+#Flexible authentication solution for Rails with Warden
+gem 'devise', '~> 3.5', '>= 3.5.6'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
