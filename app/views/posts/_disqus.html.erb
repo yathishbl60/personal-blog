@@ -1,11 +1,16 @@
 <div id="disqus_thread"></div>
 <script>
 
+var disqus_url = '<%= url_for([@post, {only_path: false}]) %>';
+var disqus_identifier = '<%= @post.id %>' ;
+var disqus_container_id = 'disqus_thread';
+var disqus_shortname = 'blog-yatheesha';
+var disqus_title = '<%= @post.title %>';
+var disqus_config_custom = window.disqus_config;
 var disqus_config = function () {
-this.page.url = '<%= url_for([@post, {only_path: false}]) %>'; // Replace PAGE_URL with your page's canonical URL variable
-this.page.identifier = '<%= @post.id %>' ; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-this.page.shortname = 'blogging';
-this.page.title = '<%= @post.title %>';
+    if (disqus_config_custom) {
+        disqus_config_custom.call(this);
+    }
 };
 
 (function() { // DON'T EDIT BELOW THIS LINE

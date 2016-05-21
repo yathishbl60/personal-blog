@@ -1,15 +1,16 @@
+
 #posts_wrapper {
 	padding: 3em 0;
 	.post {
 		text-align: center;
 		.date {
 			font-size: .9em;
-			margin: 0;
+			margin-bottom: 1.2em;
 		}
 		h2 {
 			margin: 0;
 			font-size: 2em;
-			text-transform: uppercase;
+			text-transform: uppercase;	
 			a {
 				text-decoration: none;
 				color: $dark;
@@ -19,7 +20,7 @@
 			}
 		}
 		hr {
-			margin: 3em auto;
+			margin: 1.4em auto;
 		}
 	}
 }
@@ -32,16 +33,32 @@
 		.date {
 			font-size: .9em;
 			color: $light;
-			margin: 0;
+			margin-bottom: 0.5em;
 		}
 		h1 {
 			margin: 0;
 		}
 	}
 	hr {
-		margin: 3em auto;
+		margin: 2em auto;
 	}
 }
+
+#post_content {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    line-height: 30px;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18x;
+    padding: 30px;
+
+    img {
+      float: left;
+      margin: 15px;
+      padding: 15px;
+      max-width:100%;
+    }
+  }
 
 #share_box {
 	text-align: center;
@@ -95,6 +112,7 @@
 .pagination {
 	text-align: center;
 	margin: 0 0 3em 0;
+	width: 100%;
 	a, .previous_page, .current, .next_page {
 		padding: .75em 1em;
 		margin: 0 .5em;
